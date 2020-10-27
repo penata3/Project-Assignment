@@ -1,0 +1,42 @@
+.o-dots {
+    position: absolute;
+    height: 100%;
+    width: 10px;
+    height: fit-content;
+    width: fit-content;
+    &__dot {
+        border-radius: 50%;
+        display: block;
+        width: 10px;
+        height: 10px;
+        background-color: white;
+        margin-bottom: 7px;
+        &--lightgreen {
+            background-color: #DFF4F1;
+            border-radius: 50%;
+            display: block;
+            width: 10px;
+            height: 10px;
+            margin-bottom: 7px;
+        }
+        &--transparent {
+            border-radius: 50%;
+            display: block;
+            margin-bottom: 7px;
+            width: 12px;
+            height: 12px;
+            background-color: transparent;
+            -webkit-box-shadow: inset 1px 1px 2.5px 0px #C4C4C4;
+            -moz-box-shadow: inset 1px 1px 2.5px 0px #C4C4C4;
+            box-shadow: inset 1px 1px 2.5px 0px #C4C4C4;
+        }
+    }
+    & .dot--orange {
+        background-color: #FFECB3;
+        border-radius: 50%;
+        display: block;
+        width: 10px;
+        height: 10px;
+        margin-bottom: 7px;
+    }
+}

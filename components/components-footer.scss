@@ -1,0 +1,72 @@
+        .c-page-footer {
+            background-color: #565656;
+            border-top: 12px solid #919191;
+            display: grid;
+            align-content: center;
+            position: relative;
+            padding: 64px 0px 64px 0px;
+            & ::after {
+                content: '';
+                background: url(../assets/images/one-eyed.svg) center repeat;
+                width: 220px;
+                height: 403px;
+                display: inline-block;
+                left: 75px;
+                position: absolute;
+                /* bottom: -44px; */
+                top: -92px
+            }
+            & a {
+                color: #E6E6E6;
+                display: inline block;
+                font-size: 16px;
+                line-height: 19px;
+                text-transform: capitalize;
+                &:hover {
+                    color: #41BEAD;
+                }
+            }
+            &__content {
+                display: grid;
+                grid-template-columns: 178px 326px 157px 192px 177px;
+                grid-column-gap: 72px;
+            }
+            &__contacts {
+                display: grid;
+                grid-template-rows: 20px 1fr;
+                grid-row-gap: 15px;
+                &__wraper {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr;
+                    grid-column-gap: 21px;
+                }
+                &__left {
+                    display: grid;
+                    grid-template-rows: 20px 20px 20px 20px 20px;
+                    grid-row-gap: 12px;
+                }
+                &__right {
+                    display: grid;
+                    grid-template-rows: 20px 20px;
+                    grid-row-gap: 12px;
+                }
+            }
+            &__all-courses {
+                display: grid;
+                grid-template-rows: 20px 1fr;
+                grid-row-gap: 16px;
+            }
+            &__social-medias {
+                display: grid;
+                grid-template-rows: 20px 138px;
+                grid-row-gap: 24px;
+                &__images {
+                    display: grid;
+                    grid-template-columns: 28px 28px;
+                    grid-column-gap: 30px;
+                }
+                & span {
+                    color: #919191;
+                }
+            }
+        }

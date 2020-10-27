@@ -1,0 +1,40 @@
+@import '../settings/settings-colors.scss';
+.btn {
+    background-color: $secondary-800;
+    color: $white;
+    border: none;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.14), 0px 4px 5px rgba(0, 0, 0, 0.12), 0px 1px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 100px;
+    text-transform: uppercase;
+    transition: all .2s ease;
+    &:hover {
+        cursor: pointer;
+        background-color: white;
+        color: $secondary-800;
+    }
+    &--primary {
+        padding: 14px 32px;
+        font-size: 16px;
+        line-height: 20px;
+        width: 163px;
+    }
+    &--secondary {
+        padding: 10px 22px;
+        font-size: 13px;
+        line-height: 16px;
+    }
+    &--transparent {
+        padding: 8px 32px;
+        font-size: 14px;
+        line-height: 16px;
+        background-color: white;
+        color: $secondary-800;
+        box-shadow: none;
+        border: 1px solid $secondary-800;
+        &:hover {
+            cursor: pointer;
+            background-color: $secondary-800;
+            color: $white;
+        }
+    }
+}

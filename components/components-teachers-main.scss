@@ -1,0 +1,91 @@
+.c-teachers-main {
+    display: grid;
+    grid-template-rows: max-content max-content max-content;
+    span {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 16px;
+        color: #B2B2B2;
+    }
+    
+    h3 {
+        margin-bottom: 8px;
+    }
+    &__executives {
+        padding: 96px 0px 96px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 20px;
+        p {
+            margin: 0;
+        }
+        &__info {
+            display: grid;
+            grid-template-columns: 30% 1fr;
+            grid-column-gap: 20px;
+        }
+        &--right-side {
+            display: grid;
+            grid-template-rows: 50px 1fr;
+            grid-row-gap: 20px;
+        }
+        &__dots {
+            margin: 0 auto;
+            transform: rotate(90deg);
+            top: 201px;
+            left: 753px;
+        }
+    }
+    
+    &__all-executives {
+        display: grid;
+        grid-template-columns: max-content max-content max-content max-content;
+        grid-template-rows: max-content max-content max-content max-content;
+        grid-column-gap: 85px;
+        grid-row-gap: 64px;
+        padding: 113px 0px 128px 0px;
+        &__exacutive {
+            text-align: center;
+            display: grid;
+            grid-template-rows: max-content 1fr;
+            grid-row-gap: 16px;
+            position: relative;
+            & img:hover {
+                cursor: pointer;
+            }
+        }
+    }
+    &__sign-up {
+        background-color: #66B9F8;
+        border-top: 12px solid #92CDFB;
+        padding: 64px 0px 128px 0px;
+        p {
+            color: white;
+        }
+        & .o-smaler-content-wraper {
+            display: grid;
+            grid-template-rows: max-content max-content;
+            grid-row-gap: 48px;
+        }
+        &__description {
+            text-align: center;
+            display: grid;
+            grid-row-gap: 24px;
+        }
+        &__inpur-form {
+            display: flex;
+            flex-flow: row wrap;
+            justify-content: space-evenly;
+            & input {
+                margin: 0px 16px 0px 16px;
+                width: 226px;
+                height: 52px;
+                border: 1px solid #FFFFFF;
+                border-radius: 6px;
+            }
+            & .btn {
+                margin-left: 32px;
+            }
+        }
+    }
+}

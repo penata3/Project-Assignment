@@ -1,0 +1,85 @@
+@import '../settings/settings-colors.scss';
+.c-contacts-main {
+    display: grid;
+    grid-template-rows: max-content max-content;
+    &__information {
+        width: 518px;
+        height: 382px;
+        padding: 32px;
+        box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.14), 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 3px rgba(0, 0, 0, 0.2);
+        border-radius: 12px;
+        position: absolute;
+        display: grid;
+        grid-template-columns: 216px 216px;
+        grid-template-columns: 1fr 1fr;
+        background-color: $white;
+        top: 202px;
+        left: 75px;
+        transition: all .2s ease;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &__container {
+            display: grid;
+            grid-template-rows: 24px auto;
+            grid-row-gap: 18px;
+            & p {
+                margin: 0;
+                color: #565656;
+            }
+            & time {
+                color: #FF9100;
+            }
+        }
+        & .btn {
+            grid-column: 1/3;
+            justify-self: center;
+        }
+    }
+    &__write-us {
+        display: grid;
+        grid-template-rows: 24px 52px 190px 48px;
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: 32px;
+        grid-column-gap: 32px;
+        position: relative;
+        top: 108px;
+        padding-bottom: 94px;
+        & h2 {
+            grid-column: 1 / 3;
+            text-align: center;
+            color: #41BEAD;
+        }
+        & #message {
+            grid-column: 1 / 3;
+        }
+        & .btn {
+            justify-self: start;
+        }
+        & input {
+            border: 1px solid #919191;
+            padding-top: 16px;
+            &::placeholder {
+                color: #919191;
+            }
+            &:nth-child(4) {
+                padding-bottom: 160px;
+            }
+        }
+    }
+    &__routes {
+        background-color: #FFF8E1;
+        margin-top: 96px;
+        padding-bottom: 61px;
+        & h2 {
+            text-align: center;
+            color: #41BEAD;
+        }
+        &-container {
+            display: grid;
+            grid-template-columns: 409px 409px 409px;
+            grid-column-gap: 33px;
+            margin-top: 48px;
+        }
+    }
+}
